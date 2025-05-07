@@ -27,13 +27,14 @@ def get_datetime(timezone: str = "US/Pacific"):
     
 if __name__ == "__main__":
     import asyncio
-    import os
+    # import os
     
-    port = int(os.environ.get("PORT", 8888))
+    # port = int(os.environ.get("PORT", 8888))
+    # print(f"Running on port {port}")
     asyncio.run(
         mcp.run_sse_async(
-            host="0.0.0.0", 
-            port=port, 
+            host="127.0.0.1", 
+            port=8000, 
             log_level="debug"
         )
     )
