@@ -1,1 +1,1 @@
-## Just mcp that returns time
+## Just MCP that returns time
